@@ -58,6 +58,10 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/Eject",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

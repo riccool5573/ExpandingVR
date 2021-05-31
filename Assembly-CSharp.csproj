@@ -63,12 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Climbing.cs" />
-    <Compile Include="Assets\ClimbingHand.cs" />
     <Compile Include="Assets\Low Poly Space Station\Components\Scripts\RotationScript.cs" />
+    <Compile Include="Assets\Scripts\Climbing.cs" />
+    <Compile Include="Assets\Scripts\ClimbingHand.cs" />
+    <Compile Include="Assets\Scripts\GUN.cs" />
+    <Compile Include="Assets\Scripts\JointHandler.cs" />
+    <Compile Include="Assets\Scripts\MachineGun.cs" />
+    <Compile Include="Assets\Scripts\Magazine.cs" />
+    <Compile Include="Assets\Scripts\moveplayer.cs" />
     <Compile Include="Assets\WebXR\Samples\Desert\Scripts\DesertControllerInteraction.cs" />
     <Compile Include="Assets\WebXR\Samples\Desert\Scripts\DesertFreeFlightController.cs" />
-    <Compile Include="Assets\moveplayer.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -669,6 +673,10 @@
       <Project>{99027BE4-07E1-2BE9-F84D-F4D4C44079E6}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
+    <ProjectReference Include="WebXR.csproj">
+      <Project>{3104E896-537D-4651-940F-4AF656634325}</Project>
+      <Name>WebXR</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{2C2BE8EE-698A-0A18-E1F5-82ACBE339EE4}</Project>
       <Name>SteamVR_Input_Editor</Name>
@@ -684,10 +692,6 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{4E10033F-FA02-A41C-CB54-50768BD5C85A}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="WebXR.csproj">
-      <Project>{3104E896-537D-4651-940F-4AF656634325}</Project>
-      <Name>WebXR</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
